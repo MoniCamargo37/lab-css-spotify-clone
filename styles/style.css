@@ -1,17 +1,9 @@
-/*
-Colors:
-
-Text: #1A1A1A
-Green: #00B172
-White: #FFF
-
-*/  
 html,
 body {
-  font-family: 'Releway'; 
+  font-family: "Releway";
   font-size: 16px;
   font-weight: lighter;
-  margin-top:  0px;
+  margin-top: 0px;
   padding: 0%;
   margin-left: 0px;
   margin-right: 0px;
@@ -38,7 +30,7 @@ nav ul {
   justify-content: space-between;
   width: 500px;
   align-items: flex-start;
-  padding: 0 2rem
+  padding: 0 2rem;
 }
 
 li {
@@ -50,17 +42,15 @@ li {
   font-weight: lighter;
 }
 
-
-header{
+header {
   height: 70vw;
   background-size: cover;
   background-image: url(../images/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .textCenter {
-  color: #FFF;
+  color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -68,7 +58,6 @@ header{
   align-items: center;
   height: 100%;
   font-weight: lighter;
-
 }
 
 .textCenter h1 {
@@ -83,7 +72,6 @@ header{
   font-size: 2.5rem;
   margin-top: 3px;
   font-weight: lighter;
-
 }
 .heading {
   display: flex;
@@ -99,12 +87,11 @@ header{
 }
 
 .horizontal_line {
-  background-color: #00B172;
+  background-color: #00b172;
   width: 370px;
   height: 5px;
   border-top: 5px;
 }
-
 
 .spotifyIcons {
   display: flex;
@@ -130,7 +117,7 @@ header{
 .icon h2 {
   width: 350px;
   margin: 20px;
-  color: #00B172;
+  color: #00b172;
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
@@ -145,24 +132,22 @@ header{
 }
 
 .greenSection {
-  background-color: #00B172;
+  background-color: #00b172;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
-  margin:50px;
+  justify-content: space-between;
+  margin: 50px;
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-
 }
 
-.leftSection{
+.leftSection {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   width: 60%;
- 
 }
 
 .sectionTitle {
@@ -182,7 +167,7 @@ header{
 .sectionTitle .horizontal_line {
   background-color: white;
   width: 35vw;
-  height: 5px; 
+  height: 5px;
 }
 
 .contentSection {
@@ -195,13 +180,13 @@ header{
   gap: 0;
 }
 .content {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    width: 65%;
-    padding-bottom: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 65%;
+  padding-bottom: 20px;
+}
 
 .content h3 {
   font-size: 3rem;
@@ -226,78 +211,68 @@ header{
   width: 35%;
 }
 
-.logo img{
+.logo img {
   width: 60%;
-  
 }
 
 .appSection {
   width: 430px;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   height: 100%;
-
 }
 
 .appSection img {
   width: 100%;
-  
 }
-
 
 @media screen and (min-width: 950px) and (max-width: 1500px) {
-.greenSection {
-  flex-direction: column;
-}
-.contentSection {
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
+  .greenSection {
+    flex-direction: column;
+  }
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sectionTitle h1 {
+    font-size: 2.5rem;
+  }
+  .sectionTitle .horizontal_line {
+    width: 0%;
+    height: 0px;
+  }
+
+  .content h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+
+  .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .logo {
+    align-self: center;
+    width: 30vw;
+  }
+  .content p {
+    font-size: 2rem;
+    width: 160%;
+  }
+
+  .appSection {
+    margin-top: 10px;
+    width: 40vw;
+  }
+  .appSection img {
+    width: 40vw;
+  }
 }
 
-.sectionTitle h1 {
-  font-size: 2.5rem;
-}
-.sectionTitle .horizontal_line {
-  width: 0%;
-  height: 0px;  
-}
-
-
-.content h3 {
-  font-size: 2.5rem;
-  font-weight: lighter;
-
-}
-
-.content p {
-  font-size: 2rem;
-  font-weight: lighter;
-
-}
-.logo {
-   align-self: center;
-   width: 30vw;
-}
-.content p {
-  font-size: 2rem;
-  width: 160%;
-}
-
-.appSection {
-  margin-top: 10px;
-  width: 40vw;
-}
-.appSection img {
-  width: 40vw;
-
-}
-}
-
-@media screen and (min-width: 680px) and (max-width: 950px){
-
-  
+@media screen and (min-width: 680px) and (max-width: 950px) {
   .firstHeader {
     display: flex;
     flex-direction: row;
@@ -312,11 +287,11 @@ header{
 
   nav ul {
     width: 60%;
-    align-items:center;
+    align-items: center;
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
 
   li {
@@ -337,11 +312,11 @@ header{
   .title {
     font-size: 7vw;
   }
-  
+
   .horizontal_line {
     width: 60%;
   }
-  
+
   .spotifyIcons {
     display: flex;
     flex-direction: column;
@@ -353,12 +328,12 @@ header{
   .icon img {
     height: 120px;
   }
-  
+
   .icon h2 {
     font-size: 2rem;
     margin: 0px;
   }
-  
+
   .icon p {
     width: 80%;
     font-size: 1.5rem;
@@ -368,22 +343,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
-    margin:0px;
+    justify-content: flex-start;
+    margin: 0px;
     padding: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-  
   }
 
-  .leftSection{
+  .leftSection {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     width: 100%;
   }
-  
+
   .contentSection {
     display: flex;
     flex-direction: column;
@@ -397,19 +371,19 @@ header{
     height: 10%;
     width: 100%;
   }
-  
+
   .sectionTitle h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 4px;
     margin-top: 0px;
   }
-  
+
   .sectionTitle .horizontal_line {
     width: 100%;
-    height: 5px; 
+    height: 5px;
   }
-  
+
   .content {
     height: 100%;
     width: 100%;
@@ -417,48 +391,43 @@ header{
     align-items: center;
   }
 
-.content h3 {
-  font-size: 2rem;
-  text-align: center;
-}
+  .content h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-.content p {
-  font-size: 1.5rem;
-  margin: 0px;
-  width:  80%;
-  text-align: center;
-}
+  .content p {
+    font-size: 1.5rem;
+    margin: 0px;
+    width: 80%;
+    text-align: center;
+  }
   .logo {
     width: 40%;
     padding-bottom: 20px;
   }
-  
-  .logo img{
-    width: 50%; 
+
+  .logo img {
+    width: 50%;
   }
-  
+
   .appSection {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     height: 100%;
-  
   }
-  
+
   .appSection img {
     width: 100%;
-    
   }
-  
-  
 }
-@media screen and (min-width: 470px) and (max-width: 680px){
-
+@media screen and (min-width: 470px) and (max-width: 680px) {
   .firstHeader {
     display: flex;
     flex-direction: column;
-     height: fit-content;
+    height: fit-content;
   }
 
   .spotifyLogo {
@@ -471,9 +440,9 @@ header{
     width: 100%;
     align-items: flex-start;
     padding: 0.5rem 0.5rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   li {
@@ -494,11 +463,11 @@ header{
   .title {
     font-size: 7vw;
   }
-  
+
   .horizontal_line {
     width: 60%;
   }
-  
+
   .spotifyIcons {
     display: flex;
     flex-direction: column;
@@ -510,12 +479,12 @@ header{
   .icon img {
     height: 120px;
   }
-  
+
   .icon h2 {
     font-size: 2rem;
     margin: 0px;
   }
-  
+
   .icon p {
     width: 80%;
     font-size: 1.5rem;
@@ -525,22 +494,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
-    margin:0px;
+    justify-content: flex-start;
+    margin: 0px;
     padding: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-  
   }
 
-  .leftSection{
+  .leftSection {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     width: 100%;
   }
-  
+
   .contentSection {
     display: flex;
     flex-direction: column;
@@ -554,19 +522,19 @@ header{
     height: 10%;
     width: 100%;
   }
-  
+
   .sectionTitle h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 4px;
     margin-top: 0px;
   }
-  
+
   .sectionTitle .horizontal_line {
     width: 100%;
-    height: 5px; 
+    height: 5px;
   }
-  
+
   .content {
     height: 100%;
     width: 100%;
@@ -574,57 +542,53 @@ header{
     align-items: center;
   }
 
-.content h3 {
-  font-size: 2rem;
-  text-align: center;
-}
+  .content h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-.content p {
-  font-size: 1.5rem;
-  margin: 0px;
-  width:  80%;
-  text-align: center;
-}
+  .content p {
+    font-size: 1.5rem;
+    margin: 0px;
+    width: 80%;
+    text-align: center;
+  }
   .logo {
     width: 40%;
     padding-bottom: 20px;
   }
-  
-  .logo img{
-    width: 50%; 
+
+  .logo img {
+    width: 50%;
   }
-  
+
   .appSection {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     height: 100%;
-  
-  }
-  
-  .appSection img {
-    width: 100%;
-    
   }
 
+  .appSection img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 470px) {
-
   .firstHeader {
     display: flex;
     flex-direction: column;
-     height: fit-content;
+    height: fit-content;
   }
 
   nav ul {
     width: 100%;
     align-items: flex-start;
     padding: 0.5rem 0.5rem;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   li {
@@ -645,17 +609,17 @@ header{
   .title {
     font-size: 10vw;
   }
-  
+
   .horizontal_line {
     width: 80%;
   }
-  
+
   .spotifyLogo {
     width: 50%;
     height: auto;
     margin-top: 1rem;
   }
-  
+
   .spotifyIcons {
     display: flex;
     flex-direction: column;
@@ -667,12 +631,12 @@ header{
   .icon img {
     height: 80px;
   }
-  
+
   .icon h2 {
     font-size: 1.5rem;
     margin: 0px;
   }
-  
+
   .icon p {
     width: 80%;
     font-size: 1rem;
@@ -682,23 +646,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-start;
-    margin:0px;
+    justify-content: flex-start;
+    margin: 0px;
     padding: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-  
   }
 
-  .leftSection{
+  .leftSection {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     width: 100%;
-   
   }
-  
+
   .contentSection {
     display: flex;
     flex-direction: column;
@@ -712,19 +674,19 @@ header{
     height: 10%;
     width: 100%;
   }
-  
+
   .sectionTitle h1 {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 4px;
     margin-top: 0px;
   }
-  
+
   .sectionTitle .horizontal_line {
     width: 100%;
-    height: 5px; 
+    height: 5px;
   }
-  
+
   .content {
     height: 100%;
     width: 100%;
@@ -732,38 +694,35 @@ header{
     align-items: center;
   }
 
-.content h3 {
-  font-size: 1.5rem;
-  text-align: center;
-}
+  .content h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-.content p {
-  font-size: 1rem;
-  margin: 0px;
-  width:  80%;
-  text-align: center;
-}
+  .content p {
+    font-size: 1rem;
+    margin: 0px;
+    width: 80%;
+    text-align: center;
+  }
   .logo {
     width: 40%;
     padding-bottom: 20px;
   }
-  
-  .logo img{
-    width: 80%; 
+
+  .logo img {
+    width: 80%;
   }
-  
+
   .appSection {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     height: 100%;
-  
   }
-  
+
   .appSection img {
     width: 100%;
-    
   }
-  
 }
