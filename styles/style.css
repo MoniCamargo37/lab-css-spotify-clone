@@ -1,8 +1,769 @@
 /*
 Colors:
 
-Text: 1A1A1A
+Text: #1A1A1A
 Green: #00B172
 White: #FFF
 
-*/
+*/  
+html,
+body {
+  font-family: 'Releway'; 
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top:  0px;
+  padding: 0%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.firstHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 6vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spotifyLogo {
+  width: 12vw;
+  height: 4vw;
+  margin-left: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  align-items: flex-start;
+  padding: 0 2rem
+}
+
+li {
+  display: inline;
+  text-decoration: none;
+  color: #696969;
+  list-style: none;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+
+header{
+  height: 70vw;
+  background-size: cover;
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.textCenter {
+  color: #FFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: lighter;
+
+}
+
+.textCenter h1 {
+  font-size: 7rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: lighter;
+}
+.textCenter p {
+  width: 55vw;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 3px;
+  font-weight: lighter;
+
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.horizontal_line {
+  background-color: #00B172;
+  width: 370px;
+  height: 5px;
+  border-top: 5px;
+}
+
+
+.spotifyIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 125px;
+}
+.spotifyIcons .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+.icon img {
+  height: 150px;
+}
+
+.icon h2 {
+  width: 350px;
+  margin: 20px;
+  color: #00B172;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.icon p {
+  width: 300px;
+  line-height: 120%;
+  font-size: 2rem;
+  text-align: center;
+  color: #696969;
+}
+
+.greenSection {
+  background-color: #00B172;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  margin:50px;
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+
+.leftSection{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 60%;
+ 
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: 100%;
+}
+
+.sectionTitle h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.sectionTitle .horizontal_line {
+  background-color: white;
+  width: 35vw;
+  height: 5px; 
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 0;
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 65%;
+    padding-bottom: 20px;
+  }
+
+.content h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.content p {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0px;
+  color: white;
+  width: 90%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.logo img{
+  width: 60%;
+  
+}
+
+.appSection {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  height: 100%;
+
+}
+
+.appSection img {
+  width: 100%;
+  
+}
+
+
+@media screen and (min-width: 950px) and (max-width: 1500px) {
+.greenSection {
+  flex-direction: column;
+}
+.contentSection {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sectionTitle h1 {
+  font-size: 2.5rem;
+}
+.sectionTitle .horizontal_line {
+  width: 0%;
+  height: 0px;  
+}
+
+
+.content h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+
+}
+
+.content p {
+  font-size: 2rem;
+  font-weight: lighter;
+
+}
+.logo {
+   align-self: center;
+   width: 30vw;
+}
+.content p {
+  font-size: 2rem;
+  width: 160%;
+}
+
+.appSection {
+  margin-top: 10px;
+  width: 40vw;
+}
+.appSection img {
+  width: 40vw;
+
+}
+}
+
+@media screen and (min-width: 680px) and (max-width: 950px){
+
+  
+  .firstHeader {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spotifyLogo {
+    width: 20%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    width: 60%;
+    align-items:center;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  .textCenter h1 {
+    font-size: 3rem;
+  }
+
+  .textCenter p {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
+  
+  .horizontal_line {
+    width: 60%;
+  }
+  
+  .spotifyIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .icon img {
+    height: 120px;
+  }
+  
+  .icon h2 {
+    font-size: 2rem;
+    margin: 0px;
+  }
+  
+  .icon p {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .greenSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    margin:0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  
+  }
+
+  .leftSection{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+  }
+  
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sectionTitle {
+    display: flex;
+    flex-direction: column;
+
+    height: 10%;
+    width: 100%;
+  }
+  
+  .sectionTitle h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 0px;
+  }
+  
+  .sectionTitle .horizontal_line {
+    width: 100%;
+    height: 5px; 
+  }
+  
+  .content {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+.content h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin: 0px;
+  width:  80%;
+  text-align: center;
+}
+  .logo {
+    width: 40%;
+    padding-bottom: 20px;
+  }
+  
+  .logo img{
+    width: 50%; 
+  }
+  
+  .appSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 100%;
+  
+  }
+  
+  .appSection img {
+    width: 100%;
+    
+  }
+  
+  
+}
+@media screen and (min-width: 470px) and (max-width: 680px){
+
+  .firstHeader {
+    display: flex;
+    flex-direction: column;
+     height: fit-content;
+  }
+
+  .spotifyLogo {
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  .textCenter h1 {
+    font-size: 3rem;
+  }
+
+  .textCenter p {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .title {
+    font-size: 7vw;
+  }
+  
+  .horizontal_line {
+    width: 60%;
+  }
+  
+  .spotifyIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .icon img {
+    height: 120px;
+  }
+  
+  .icon h2 {
+    font-size: 2rem;
+    margin: 0px;
+  }
+  
+  .icon p {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .greenSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    margin:0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  
+  }
+
+  .leftSection{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+  }
+  
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sectionTitle {
+    display: flex;
+    flex-direction: column;
+
+    height: 10%;
+    width: 100%;
+  }
+  
+  .sectionTitle h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 0px;
+  }
+  
+  .sectionTitle .horizontal_line {
+    width: 100%;
+    height: 5px; 
+  }
+  
+  .content {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+.content h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin: 0px;
+  width:  80%;
+  text-align: center;
+}
+  .logo {
+    width: 40%;
+    padding-bottom: 20px;
+  }
+  
+  .logo img{
+    width: 50%; 
+  }
+  
+  .appSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 100%;
+  
+  }
+  
+  .appSection img {
+    width: 100%;
+    
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+
+  .firstHeader {
+    display: flex;
+    flex-direction: column;
+     height: fit-content;
+  }
+
+  nav ul {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .textCenter h1 {
+    font-size: 2rem;
+  }
+
+  .textCenter p {
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .title {
+    font-size: 10vw;
+  }
+  
+  .horizontal_line {
+    width: 80%;
+  }
+  
+  .spotifyLogo {
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
+  .spotifyIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .icon img {
+    height: 80px;
+  }
+  
+  .icon h2 {
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+  
+  .icon p {
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .greenSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    margin:0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  
+  }
+
+  .leftSection{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+   
+  }
+  
+  .contentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sectionTitle {
+    display: flex;
+    flex-direction: column;
+
+    height: 10%;
+    width: 100%;
+  }
+  
+  .sectionTitle h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 0px;
+  }
+  
+  .sectionTitle .horizontal_line {
+    width: 100%;
+    height: 5px; 
+  }
+  
+  .content {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+.content h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.content p {
+  font-size: 1rem;
+  margin: 0px;
+  width:  80%;
+  text-align: center;
+}
+  .logo {
+    width: 40%;
+    padding-bottom: 20px;
+  }
+  
+  .logo img{
+    width: 80%; 
+  }
+  
+  .appSection {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 100%;
+  
+  }
+  
+  .appSection img {
+    width: 100%;
+    
+  }
+  
+}
